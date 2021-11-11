@@ -49,13 +49,14 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-
+EMILIA_HELP_IMG = "https://telegra.ph/file/b3efe476b188202e0b81e.jpg"
+EMILIA_START_IMG = "https://telegra.ph/file/a66ae9f11045a17efd8c3.jpg"
 
 PM_START_TEXT = f"""
 This is {BOT_NAME}[.]({EMILIA_START_IMG})
 
-A Diverse Systematic Bot Written in Python.
-You can Add Me In Your Group for Knowing my True Power.
+A Organized Bot Written in Python.
+You can Add Me In Your Group for So that I can Show You My Jujutsu Skills.
 
 You can either use /help or the Commands Button Given Below To get a list of my features!
 """
@@ -63,7 +64,7 @@ You can either use /help or the Commands Button Given Below To get a list of my 
 buttons = [
     [
         InlineKeyboardButton(
-            text="🏹Summon ME🏹",url=f"t.me/{BOT_USERNAME}?startgroup=true"
+            text="➕️Summon ME➕️",url=f"t.me/{BOT_USERNAME}?startgroup=true"
         ),
     ],
     [
@@ -73,13 +74,13 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-          text="📮 Updates", url="https://t.me/TangentXOfficial"
+          text="Updates", url="https://t.me/MegumiSupport"
         ),
     ],
          
     [
        InlineKeyboardButton(
-           text="🐱 Support", url=f"https://t.me/{SUPPORT_CHAT}"
+           text="⛩Support⛩", url=f"https://t.me/{SUPPORT_CHAT}"
          ),
     ],
     [
@@ -398,7 +399,7 @@ def get_help(update: Update, context: CallbackContext):
             InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="help_back"),
                                 InlineKeyboardButton(
-                                    text="Support", url="https://telegram.dog/TangentChats"
+                                    text="Support", url="https://telegram.dog/MegumiSupport"
                                 )]]
             ),
         )
